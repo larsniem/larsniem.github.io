@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Lars Niemczik</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="../../css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+</head>
+<body class="project">
+
+	<header role="banner">
+		<div class="clear row header">
+			<div class="wrap">
+				<div class="logo span3 span">
+					<h1><a href="/">Lars Niemczik</a></h1>
+					<h4>CAD und Maschinenbau</h4>
+				</div>
+				<input type="checkbox" id="nav-toggle">
+								<label for="nav-toggle">
+					<svg height="12px" version="1.1" viewBox="0 0 22 12" width="22px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<defs>
+							<path d="M0.500836134,0 C0.224231975,0 0,0.214035034 0,0.504684448 L0,1.49531555 C0,1.77404508 0.217741728,2 0.500836134,2 L21.4991639,2 C21.775768,2 22,1.78596497 22,1.49531555 L22,0.504684448 C22,0.225954924 21.7822583,0 21.4991639,0 L0.500836134,0 Z M0.500836134,5 C0.224231975,5 0,5.21403503 0,5.50468445 L0,6.49531555 C0,6.77404508 0.217741728,7 0.500836134,7 L21.4991639,7 C21.775768,7 22,6.78596497 22,6.49531555 L22,5.50468445 C22,5.22595492 21.7822583,5 21.4991639,5 L0.500836134,5 Z M0.500836134,10 C0.224231975,10 0,10.214035 0,10.5046844 L0,11.4953156 C0,11.7740451 0.217741728,12 0.500836134,12 L21.4991639,12 C21.775768,12 22,11.785965 22,11.4953156 L22,10.5046844 C22,10.2259549 21.7822583,10 21.4991639,10 L0.500836134,10 Z" id="path-1"/>
+						</defs>
+						<g fill="none" fill-rule="evenodd" id="miu" stroke="none" stroke-width="1">
+							<g id="editor_list_view_hambuger_menu_glyph">
+								<use fill="#fff" fill-rule="evenodd" xlink:href="#path-1"/>
+								<use fill="none" xlink:href="#path-1"/>
+							</g>
+						</g>
+					</svg>
+				</label>
+				<nav role="navigation span3 span">
+					<a href="/">Portfolio</a>
+					<a href="/about/">&Uuml;ber mich</a>
+					<a href="https://grabcad.com/lars.niemczik-1/projects">GrabCAD</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+		<main role="main">
+			<div class="container">
+				<div class="full-width title">
+					<img src="./img/Compilation_Banner_Resize.jpg" alt="">
+					<div class="head">
+						<h2>Spaltprofilieren und Spaltbiegen</h2>
+						<h4 style="color:black">Modellierungsfeature</h4>
+					</div>
+				</div>
+
+				<div class="row">
+					<h3>Idee</h3>
+					<p>
+						Im Zentrum des Sonderforschungsbereich 666 Integrale Blechbauweisen höherer Verzweigungsordnung standen die Fertigungsverfahren des Spaltprofilierens und Spaltbiegens. 
+						Für die Konstruktion von Blechbauteilen im CAD System Siemens NX sind hierfür im Rahmen des „Direct Modeling“ Ansatzes entwickelt worden.
+					</p>
+					<div class="wrap">
+						<div class="span3 span">
+							<img src="./img/Flowsplit_Dimensions.jpg" alt="">
+							<p>Spaltprofilieren</p>
+						</div>
+						<div class="span3 span">
+							<img src="./img/Bendsplit_Dimensions.jpg" alt="">
+							<p>Spaltbiegen</p>
+						</div>
+					</div>
+					<p>
+						Durch die Implementierung der Features lassen sich diese als genauso einfach wie andere Konstruktionselemente, wie z.B. Fasen oder Nuten, verwenden. Die Basis der Features bildet ein mathematisches Modell, 
+						welches auf den geometrischen Zusammenhängen des Profilquerschnitts unter der Annahme der Volumenkonstanz basiert.
+					</p>
+				</div>
+
+				<div class="row">
+					<h3>Nichtlineares Spaltprofilieren</h3>
+					<p>
+						Als Teil meiner Tätigkeit als Hilfswissenschaftlicher Mitarbeiter habe ich unter anderem das Feature für das Spaltprofilieren weitestgehend neu entwickelt, 
+						um auch das nichtlineare Spaltprofilieren darstellen zu können. 
+						Basis für die Entwicklung des Features war zunächst die Definition eines „User Defined Features“ (UDF). 
+						Um die Anzahl der auszuwählenden Referenzen und definierenden Parameter zu minimieren bzw. logischer zu gestalten erfolgt das Erstellen und Bearbeiten der UDFs über NX Open. 
+						Durch die Kombination der UDFs mit NX Open lässt sich die Anwendung nicht mehr von Standardfeatures unterscheiden.	
+					</p>		
+					<div class="wrap">
+						<div class="span3 span">
+							<img src="./img/CAD_Flowsplit_Linear.jpg" alt="">
+							<p>Lineares Spaltbiegen</p>
+						</div>
+						<div class="span3 span">
+							<img src="./img/CAD_Flowsplit_NonLinear.jpg" alt="">
+							<p>Nichtlienares Spaltbiegen</p>
+						</div>
+					</div>
+					<p> 
+						Mit der Version NX 11.0.0 ist die Definition von „Custom Features“ möglich. 
+						Diese bieten deutlich mehr Freiheitgrade bei der Implementierung eines Features. 
+						Durch die rein programmatische Lösung lassen sich z.B. auch sehr kleine Spalttiefen darstellen, 
+						bei denen eine rein analytische Lösung nicht mehr möglich ist, 
+						ohne den Aufwand für die Implementierung überproportional zu erhöhen.
+					</p>
+				</div>
+				
+				<div class="row">
+					<h3>Nichtlineares Spaltbiegen</h3>
+					<p>
+						Analog zum Spaltprofilieren habe ich ein „Custom Feature“ für das nichtlineare Spaltbiegen implementiert. Das Feature entsteht
+						aus der aus der Anwendung von 28 Standardfeatures und unter der Zuhilfenahme des Parasolid Kernels.
+					</p>
+					<div class="wrap">
+						<div class="span3 span">
+							<img src="./img/Bendsplit_Linear.jpg" alt="">
+							<p>Lineares Spaltbiegen</p>
+						</div>
+						<div class="span3 span">
+							<img src="./img/Bendsplit_NonLinear.jpg" alt="">
+							<p>Nichtlienares Spaltbiegen</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<h3>Biegen und PMI integration</h3>
+					<p>
+						Die integrale Blechbauweise höherer Verzweigungsordnung kennzeichnet im Besonderen da vorhanden sein mehrerer Biegelinien. 
+						Dies ist in NX nicht direkt vorgesehen. 
+						Für die Konstruktion von Blechbauteilen mittels Standardfeatures z.B. Biegen werden die Biegelinien bzw. Mittelflächen herangezogen. 
+						Um Biegeoperation an den Flanschen linearer Spaltprofile habe ich, 
+						auf Basis des Standardfeatures, 
+						ein Feature speziell für diesen Fall implementiert.
+					</p>
+					<div class="wrap">
+						<div class="span3 span">
+							<img src="./img/Bendsplit_Linear.jpg" alt="">
+							<p>Lineares Spaltbiegen</p>
+						</div>
+						<div class="span3 span">
+							<img src="./img/Bendsplit_NonLinear.jpg" alt="">
+							<p>Nichtlienares Spaltbiegen</p>
+						</div>
+					</div>
+					<p>
+						Gegenüber dem Standardfeature verfügt das implementierte Feature über die Möglichkeit die Abmaße direkt an der Geometrie zu in Form von „Product Manufacturing Information“ (PMI) zu visualisieren.
+					</p>
+
+				</div>
+					
+
+				<div class="full-width dark">
+					<div class="row">
+						<h3>Renderings</h3>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="./img/HalfCylinder_Length_Gallery.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/FlowSplit_FlangeBend_Gallery.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/Bowl_Gallery.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/Flowsplit_Weld_Gallery.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/Compilation_Banner_Resize.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/Flowsplit_NonlinearBend_Gallery.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/HalfCylinder_Tangential_Gallery.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/Compilation_Gallrey.jpg" alt=""></div>
+							</div>
+						    <div class="swiper-pagination"></div>
+						</div>
+						<p>Hier sind einige der Renderings zu finden die mit Keyshot während des Entwicklungsprozesses entstanden sind.</p>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<footer>
+			<div class="clear row footer">
+				<p class="copy">
+					Copyright © Lars Niemczik 2013. <a href="http://leifniem.bitbucket.org/impressum/">Impressum</a>
+				</p>
+			</div>
+		</footer>
+
+		<script src="../../js/swiper.js"></script>
+		<script>        
+		var mySwiper = new Swiper ('.swiper-container', {
+			loop: true,
+			calculateHeight: true,
+			grabCursor: true,
+			// Navigation arrows
+			pagination: ".swiper-pagination"
+		});
+		window.onresize = function (){
+			mySwiper.reInit();
+		}
+		</script>
+		<script>        
+			var frame=document.getElementsByTagName("iframe");
+			var pNode = frame[0].parentNode;
+
+			window.addEventListener("resize", function () {
+				w = frame[0].dataset.maxWidth;
+				if((pNode.clientWidth - 60) < w){
+					now = (pNode.clientWidth - 60) / w;
+					frame[0].height = w * now * frame[0].dataset.aspectRatio;
+					frame[0].width = w * now;
+				}
+			})
+
+			var evt=document.createEvent("UIEvents");
+			evt.initUIEvent("resize",true,false,window,0);
+			window.dispatchEvent(evt)
+		</script>
+	    <!--<script type="text/javascript" src="./seite_files/VR_Test_1/files/KeyShotVR.js"></script> -->
+	  
+
+	</body>
+</html>
