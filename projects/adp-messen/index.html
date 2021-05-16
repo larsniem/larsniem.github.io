@@ -11,7 +11,8 @@
 	<title>Lars Niemczik</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="/css/swiper.css">
+	<link rel="stylesheet" href="/css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 </head>
@@ -120,6 +121,8 @@
 							<div class="swiper-slide"><img src="./img/Turbineschaufel_Reconstruction.jpg" alt=""></div>
 						</div>
 						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
 					<p>Beispiel gemessener Bauteile und ihrer Reskonstruktion</p>
 				</div>
@@ -135,39 +138,23 @@
 		</div>
 	</footer>
 
-	<script src="../../js/swiper.js"></script>
-	<script>
-		var mySwiper = new Swiper('.swiper-container', {
+		<script src="/js/swiper.js"></script>
+		<script>
+		var mySwiper = new Swiper ('.swiper-container', {
 			loop: true,
 			calculateHeight: true,
 			grabCursor: true,
 			// Navigation arrows
-			pagination: ".swiper-pagination"
+			pagination: ".swiper-pagination",
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
 		});
-		window.onresize = function () {
+		window.onresize = function (){
 			mySwiper.reInit();
 		}
-	</script>
-	<script>
-		var frame = document.getElementsByTagName("iframe");
-		var pNode = frame[0].parentNode;
-
-		window.addEventListener("resize", function () {
-			w = frame[0].dataset.maxWidth;
-			if ((pNode.clientWidth - 60) < w) {
-				now = (pNode.clientWidth - 60) / w;
-				frame[0].height = w * now * frame[0].dataset.aspectRatio;
-				frame[0].width = w * now;
-			}
-		})
-
-		var evt = document.createEvent("UIEvents");
-		evt.initUIEvent("resize", true, false, window, 0);
-		window.dispatchEvent(evt)
-	</script>
-	<!--<script type="text/javascript" src="./seite_files/VR_Test_1/files/KeyShotVR.js"></script> -->
-
-
+		</script>
 </body>
 
 </html>

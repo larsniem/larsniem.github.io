@@ -691,8 +691,13 @@ img, video, audio, iframe, object {
     text-shadow: 0 0 5px #000
 }
 
-.swiper-button-next {
-    right: 0
+.swiper-button-prev, .swiper-button-next {
+    opacity: 0;
+    transition: .3s;
+}
+
+.swiper-container:hover > *{
+    opacity: 1;
 }
 
 .center{

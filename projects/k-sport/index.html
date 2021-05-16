@@ -8,7 +8,8 @@
 	<title>Lars Niemczik</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="/css/swiper.css">
+	<link rel="stylesheet" href="/css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 </head>
@@ -145,7 +146,9 @@
 									<div class="swiper-slide"><img src="./img/N2-K-Sport-Studio-Side-Left-DarkGold-1920x1080.jpg" alt=""></div>
 									<div class="swiper-slide"><img src="./img/N2-K-Sport-Studio-Top-DarkGold-1920x1080.jpg" alt=""></div>
 							    </div>
-						    	<div class="swiper-pagination"></div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
 							</div>
 						</div>
 					</div>
@@ -160,20 +163,22 @@
 			</div>
 		</footer>
 
-		<script src="../../js/swiper.js"></script>
-		<script>        
-		var mySwiper = new Swiper ('.swiper-container', {
+		<script src="/js/swiper.js"></script>
+		<script>
+		var kSwiper = new Swiper ('.swiper-container', {
 			loop: true,
 			calculateHeight: true,
 			grabCursor: true,
 			// Navigation arrows
-			pagination: ".swiper-pagination"
+			pagination: ".swiper-pagination",
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
 		});
 		window.onresize = function (){
-			mySwiper.reInit();
+			kSwiper.reInit();
 		}
 		</script>
-	  
-
 	</body>
 </html>
